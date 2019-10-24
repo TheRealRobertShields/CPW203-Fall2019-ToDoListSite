@@ -19,7 +19,6 @@ window.onload = function(){
 }
 
 function main(){
-    console.log("Main");
     let item:ToDoItem = getItem();
 
     // Display new ToDoItem on page

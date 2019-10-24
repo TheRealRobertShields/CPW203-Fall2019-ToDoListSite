@@ -13,7 +13,6 @@ window.onload = function () {
     addBtn.onclick = main;
 };
 function main() {
-    console.log("Main");
     var item = getItem();
     // Display new ToDoItem on page
     displayToDoItem(item);
