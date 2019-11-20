@@ -21,7 +21,7 @@ div#todo, div#completed{
     margin-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
-    height: 300px;
+    height: auto;
     overflow: auto;
 }
 

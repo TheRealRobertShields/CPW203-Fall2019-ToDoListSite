@@ -58,6 +58,7 @@ function displayToDoItem(item:ToDoItem):void{
     div.onclick = markAsComplete;
     let displayDiv = document.getElementById("todo");
     displayDiv.appendChild(div);
+    div.ondblclick = removeTask;
 }
 
 /**
@@ -68,4 +69,7 @@ function markAsComplete(){
     let currItem = <HTMLElement>this;
     let completedItems = document.getElementById("completed");
     completedItems.appendChild(currItem);
+}
+function removeTask(){
+    this.remove();
 }

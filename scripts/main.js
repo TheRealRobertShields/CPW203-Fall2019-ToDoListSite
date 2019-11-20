@@ -47,6 +47,7 @@ function displayToDoItem(item) {
     div.onclick = markAsComplete;
     var displayDiv = document.getElementById("todo");
     displayDiv.appendChild(div);
+    div.ondblclick = removeTask;
 }
 /**
  * Move clicked task to completed section of the web page
@@ -56,4 +57,7 @@ function markAsComplete() {
     var currItem = this;
     var completedItems = document.getElementById("completed");
     completedItems.appendChild(currItem);
+}
+function removeTask() {
+    this.remove();
 }
